@@ -1,0 +1,25 @@
+The Vernam cipher, also known as the one-time pad, is a symmetric key cipher that operates 
+using a key of the same length as the plaintext. 
+**Encryption Process** 
+Plaintext & Key Alignment: 
+• Each letter in the plaintext and the key is converted to a numerical value using its 
+position in the alphabet (A=0, B=1, ..., Z=25). 
+Addition with Key: 
+• Each plaintext letter's numeric value is added to the corresponding key letter's numeric 
+value. 
+Modulo 26 Operation: 
+• The sum is taken modulo 26 to ensure that the result remains within the alphabet range. 
+Conversion Back to Character: 
+• The resulting numeric value is converted back to its respective letter to form the 
+ciphertext. 
+
+**Decryption Process** 
+Ciphertext & Key Alignment: 
+• Each letter in the ciphertext and the key is converted to a numerical value. 
+Subtraction with Key: 
+• Each ciphertext letter's numeric value is subtracted by the corresponding key letter's 
+numeric value. 
+Modulo 26 Operation: 
+• The result is taken modulo 26 to ensure it remains within the alphabet range. 
+Conversion Back to Character: 
+• The resulting numeric value is converted back to a letter to retrieve the original plaintext.

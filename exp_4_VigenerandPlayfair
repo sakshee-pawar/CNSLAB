@@ -1,0 +1,63 @@
+***Vigenere Cipher***
+The Vigenère Cipher is a polyalphabetic substitution cipher that improves upon the simple 
+Caesar Cipher by using a keyword to shift letters, making it more resistant to frequency 
+analysis attacks. 
+**Encryption Process** 
+Repeat the Key: 
+• The key is repeated or extended to match the length of the plaintext. 
+Convert Letters to Numbers: 
+• Each letter in the plaintext and key is converted to a numerical value (A = 0, B = 1, ..., 
+Z = 25). 
+Apply the Vigenère Formula: 
+• Each plaintext letter is shifted forward by the corresponding key letter’s value. 
+• Formula: Ci=(Pi+Ki) mod 26 Ci = (Pi + Ki) mod 26 Ci=(Pi+Ki)mod26 
+• The resulting value is converted back to a letter to form the ciphertext. 
+**Decryption Process** 
+Repeat the Key: 
+• The key is repeated to match the length of the ciphertext. 
+Convert Letters to Numbers: 
+• Each ciphertext and key letter is converted to its numerical equivalent. 
+Apply the Reverse Vigenère Formula: 
+• The ciphertext letter is shifted backward using the key letter’s value. 
+• Formula: Pi=(Ci−Ki)mod  26 Pi = (Ci - Ki) mod 26Pi=(Ci−Ki)mod26 
+• The resulting value is converted back to a letter to recover the plaintext. 
+
+***PlayFair Cipher***
+The Playfair Cipher is a digraph substitution cipher that encrypts text in pairs of letters 
+(digraphs) instead of individual characters, making it more secure than simple substitution 
+ciphers like the Caesar or Vigenère Cipher. It was invented by Charles Wheatstone in 1854 
+but was named after Lord Playfair, who promoted its use. 
+**Encryption Process** 
+Key Matrix Generation 
+• A 5×5 matrix is created using the given key. 
+• The key is written first, followed by the remaining letters of the alphabet (excluding 'J', 
+which is merged with 'I'). 
+• Duplicates are removed, and letters are placed row-wise. 
+Text Preparation 
+• The plaintext is converted to uppercase, and 'J' is replaced with 'I'. 
+• It is then split into digraphs (pairs of two letters). 
+• If a pair contains repeated letters, an 'X' is inserted between them. 
+• If the last pair has a single letter, an 'X' is added as padding. 
+*Encryption Rules* 
+• Same Row: Each letter is replaced with the next letter in the row (circular shift). 
+• Same Column: Each letter is replaced with the next letter in the column (circular shift). 
+• Rectangle Rule: If letters form a rectangle, they are swapped with the corresponding 
+letter in the same row but opposite column. 
+Formula: 
+• If letters are in same row → shift right 
+• If letters are in same column → shift down 
+• If letters form a rectangle → swap column positions
+**Decryption Process** 
+Key Matrix Retrieval 
+• The same 5×5 matrix is generated using the given key. 
+*Decryption Rules* 
+• Same Row: Each letter is replaced with the previous letter in the row.
+• Same Column: Each letter is replaced with the previous letter in the column. 
+• Rectangle Rule: Opposite corners are swapped back. 
+Formula: 
+• If letters are in same row → shift left 
+• If letters are in same column → shift up 
+• If letters form a rectangle → swap back to original column 
+Remove Extra 'X' 
+• The inserted 'X' (used for breaking repeated letters) may be removed if it doesn't change 
+the original meaning.
