@@ -19,6 +19,7 @@ These are physical devices that are attached to the computer or keyboard. They r
 These are programs installed on a computer or device that run in the background and record keystrokes. They can be more diverse in their functionality.   
 
 *API-based Keyloggers:* These intercept keyboard events by using the operating system's application programming interfaces (APIs) that manage keyboard input.   
-*Kernel-based Keyloggers:* Operating at the core level of the operating system, these are more powerful and harder to detect as they intercept keystrokes before they reach applications. They are often implemented as rootkits.   
+*Kernel-based Keyloggers:* Operating at the core level of the operating system, these are more powerful and harder to detect as they intercept keystrokes before 
+they reach applications. They are often implemented as rootkits.   
 *Hypervisor-based Keyloggers:* Theoretically, these reside in a malware hypervisor running beneath the operating system, making them very difficult to detect.   
 *Form-grabbing Keyloggers:* These specifically record data entered into web forms, capturing information when the user submits the form.
