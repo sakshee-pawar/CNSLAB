@@ -1,0 +1,37 @@
+***Network reconnaissance:*** 
+Network reconnaissance is the process of gathering information about a target network to 
+identify vulnerabilities that can be exploited. It is commonly used by ethical hackers for 
+security assessments and by attackers for malicious purposes. Reconnaissance can be active 
+(direct interaction with the target) or passive (indirect methods like monitoring network traffic 
+or searching public records). 
+
+***WHOIS -***
+used to retrieve domain registration information from publicly available databases. 
+It provides details such as the domain owner, contact information, 
+registrar, registration and expiration dates, and name servers. 
+ **cmd -**
+    whois google.com (Install with sudo apt install whois if needed)
+
+***dig (Domain information groper)***
+ It retrieves information like IP addresses, mail servers, and name 
+servers associated with a domain. 
+It is commonly used by network administrators and security analysts for troubleshooting DNS 
+issues and checking domain configurations. 
+ **cmd -**
+    dig google.com
+
+***Traceroute -***
+The traceroute command (or tracert in Windows) is used to trace the path that packets take 
+from a source to a destination across a network. It helps identify the number of hops (routers) 
+between two devices and detects network delays or failures. Each hop in the output represents 
+a router along the path, displaying its IP address and response time. This command is useful 
+for diagnosing slow connections, detecting routing loops, and identifying network congestion.
+ **cmd -**
+    tracert google.com (windows)
+    traceroute google.com (Linux)
+
+***Nslookup -***
+The nslookup (Name Server Lookup) command is used to query DNS records and retrieve 
+information about domain names, IP addresses, and mail servers. It helps in troubleshooting 
+DNS issues and verifying domain configurations. Unlike dig, which provides more detailed 
+output, nslookup is simpler and available on both Windows and Linux for quick DNS lookups. 

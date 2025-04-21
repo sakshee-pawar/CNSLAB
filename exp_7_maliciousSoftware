@@ -1,0 +1,24 @@
+***Keyloggers -***
+A keylogger is a tool that can record and report on a computer user's activity as they 
+interact with a computer. The name is a short version of keystroke logger, and one of 
+the main ways keyloggers keep track of you is by recording what you type as you type 
+it. Some keyloggers go beyond just logging keystrokes and recording text and snoop in 
+a number of other ways as well. It's possible for advanced keyloggers to: 
+• Log clipboard text, recording information that you cut and paste from other 
+documents 
+• Track activity like opening folders, documents, and applications 
+• Take and record randomly timed screenshots 
+• Request the text value of certain on-screen controls, which can be useful for 
+grabbing passwords. 
+**Types -**
+**Hardware Keyloggers:**
+These are physical devices that are attached to the computer or keyboard. They record keystrokes directly as they pass through the connection.  
+*Keyboard Cable Keyloggers:* These are placed inline between the keyboard and the computer, often disguised as a cable connector.   
+*USB Keyloggers:* These plug directly into a USB port, and the keyboard is then connected to the keylogger. They can be very small and inconspicuous, sometimes resembling a USB drive. 
+**Software Keyloggers:**
+These are programs installed on a computer or device that run in the background and record keystrokes. They can be more diverse in their functionality.   
+
+*API-based Keyloggers:* These intercept keyboard events by using the operating system's application programming interfaces (APIs) that manage keyboard input.   
+*Kernel-based Keyloggers:* Operating at the core level of the operating system, these are more powerful and harder to detect as they intercept keystrokes before they reach applications. They are often implemented as rootkits.   
+*Hypervisor-based Keyloggers:* Theoretically, these reside in a malware hypervisor running beneath the operating system, making them very difficult to detect.   
+*Form-grabbing Keyloggers:* These specifically record data entered into web forms, capturing information when the user submits the form.
